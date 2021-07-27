@@ -56,7 +56,7 @@ This functtion is simple and manages the sorting of our "rocket" property.
 You'll see by our use of generics, compare infers the only properties you could possibly sort, which enables us quick iteration because we don't need to refer to a separate file
 ![infer](assets/infer.png)
 
-You'll also notice that it throws a compilation error if you select an invalid entry.  Since we used generics, this sort could be used for any array iterate in the application.
+You'll also notice that it throws a compilation error if you select an invalid entry.  Since we used generics, this sort could be used for any array iteration in the application.
 
 # That's it!
 Please see [Spacex React](https://github.com/SkylarWapato/spacex-react) for the client-side portion of this project.
