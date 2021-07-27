@@ -70,8 +70,6 @@ export const launches: ISchemaLevelResolver<{}, {}, {
       const date = parseInt(item.launchDate)
       const min = searchByStartDate || 0
       const max = searchByEndDate || Infinity
-      console.log('max:', max)
-      console.log('searchByEndDate:', searchByEndDate)
 
       return date >= min && date <= max
     })
