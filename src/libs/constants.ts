@@ -1,0 +1,1 @@
+export const SPACEX_URL = process.env.SPACEX_URL || 'https://api.spacexdata.com/v3/launches'

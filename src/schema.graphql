@@ -1,0 +1,25 @@
+type Launch {
+  missionName: String
+  rocketName: String
+  launchDate: String
+  videoLink: String
+}
+
+enum SortBy {
+  mission_name_asc
+  mission_name_desc
+  rocket_name_asc
+  rocket_name_desc
+  launch_date_asc
+  launch_date_desc
+}
+
+type Query {
+  launches(
+    sortBy: SortBy,
+    searchByMission: String,
+    searchByRocket: String,
+    searchByStartDate: Int,
+    searchByEndDate: Int
+    ): [Launch]
+}
