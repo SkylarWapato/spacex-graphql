@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development webpack && node dist/graphql.js"
+    "start": "cross-env NODE_ENV=development webpack && node dist/graphql.js"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +12,8 @@
   "devDependencies": {
     "@types/lodash": "^4.14.171",
     "@types/node-fetch": "^2.5.12",
-    "@types/react-date-range": "^1.1.6",
     "@types/string-similarity": "^4.0.0",
+    "cross-env": "^7.0.3",
     "graphql-import-loader": "^0.2.1",
     "ts-loader": "^9.2.3",
     "typescript": "^4.3.5",
@@ -27,7 +26,6 @@
     "graphql-tools": "^7.0.5",
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.1",
-    "react-date-range": "^1.3.0",
     "string-similarity": "^4.0.4"
   }
 }
